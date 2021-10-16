@@ -534,6 +534,10 @@ body {
   fill: var(--primary-title-color);
 }
 
+.mailing {
+  margin-left: auto;
+}
+
 /* ------------PORTFOLIO----------- */
 
 .filter {

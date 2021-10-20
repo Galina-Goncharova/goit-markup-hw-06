@@ -381,7 +381,9 @@
             <div class="mailing">
                 <p class="footer-text ">Подпишитесь на рассылку</p>
                 <form class="form-footer">
-                    <input type="email"  name="email" placeholder="E-mail" class="email-form-footer"/>
+                    <label>
+                    <input type="email"  name="email-mailing" placeholder="E-mail" class="email-form-footer"/>
+                    </label>
                     <button type="submit" class="btn btn-footer">Подписаться
                         <svg class="footer-svg">
                             <use href="./images/sprite.svg#icon-send"></use>
@@ -401,33 +403,36 @@
         <form>
             <label><span class="lable-modal">Имя</span>
                <span class="input">
+                    <input type="text" class="modal-field" name="user-name">
                 <svg class="field-icon" width="18" height="18">
                     <use href="./images/sprite.svg#icon-person-black"></use>
                 </svg>
-                   <input type="text" class="modal-field"></span>
+                  </span>
             </label>
             <label><span class="lable-modal">Телефон</span>
             <span class="input">
+                <input type="tel" class="modal-field" name="user-tel">
                 <svg class="field-icon" width="18" height="18">
                     <use href="./images/sprite.svg#icon-phone-black"></use>
                 </svg>
-                <input type="tel" class="modal-field"></span>
+                </span>
             </label>
             <label><span class="lable-modal">Почта</span>
                 <span class="input">
+                    <input type="email" class="modal-field" name="user-email">
                     <svg class="field-icon" width="18" height="18">
                         <use href="./images/sprite.svg#icon-email-black"></use>
                     </svg>
-                    <input type="email" class="modal-field"></span>
+                    </span>
             </label>
             <label for="commit"></label><span class="lable-modal">Комментарий</span>
             <textarea name="commit" id="commit" class="text-imput" placeholder="Введите текст"></textarea>
 
-            <input type="checkbox" id="modal-checkbox" class="modal-checkbox" visually="hidden">
+            <input type="checkbox" name="modal-checkbox" id="modal-checkbox" class="modal-checkbox visually-hidden">
             <label for="modal-checkbox" class="check-text">
-                <span>
-                    <svg class="check-icon"width="16" height="15">
-                        <use href="./images/sprite.svg#icon-check-box"></use>
+                <span class="">
+                    <svg class="check-icon" width="16" height="15">
+                        <use href="./images/sprite.svg#icon-icon-Vector"></use>
                     </svg>
                 </span>
                 Соглашаюсь с рассылкой и принимаю&#160<a href="" class="modal-link">Условия договора</a>
